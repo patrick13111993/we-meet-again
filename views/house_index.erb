@@ -1,0 +1,10 @@
+<h1>Hogwarts Houses</h1>
+
+<% for house in @houses %>
+<a href="/houses/<%= house.id() %>"><%if house.house_name == "Gryffindor"%><p><img src="https://mwprod.s3-eu-west-1.amazonaws.com/fw/cm/image/8/408941/gryffindor%E2%84%A2crest.png" alt="Gryffindor" width="250" height="250">
+<%elsif house.house_name == "Hufflepuff"%><img src="http://vignette3.wikia.nocookie.net/harrypotter/images/3/30/Hufflepuff%E2%84%A2_Crest_(Painting).png/revision/latest?cb=20091129184403" alt="Hufflepuff" width="250" height="250"></p>
+<%elsif house.house_name == "Ravenclaw"%><p><img src="http://vignette1.wikia.nocookie.net/harrypotter/images/6/6c/Ravenclaw%E2%84%A2_Crest_(Painting).png/revision/latest?cb=20091129184403" alt="Ravenclaw" width="250" height="250">
+<%elsif house.house_name == "Slytherin"%><img src="http://vignette4.wikia.nocookie.net/harrypotter/images/e/ef/Slytherin%E2%84%A2_Crest_(Painting).png/revision/latest?cb=20091129190321" alt="Slytherin" width="250" height="250"></p></a>
+<hr/>
+<% end %>
+<% end %>

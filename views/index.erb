@@ -1,0 +1,9 @@
+<h1>Students</h1>
+<p><a href="/students/new">Enrol as Student</a></p>
+<% for student in @students %>
+<p>Name: <%= student.pretty_name() %></p>
+<p>Age: <%= student.age() %> </p>
+<p>House: <%= student.house.house_name %> </p>
+<a href="/students/<%= student.id() %>">View Student</a>
+<hr/>
+<% end %>

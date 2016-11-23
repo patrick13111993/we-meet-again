@@ -1,0 +1,32 @@
+<h1>Sorting Hat</h1>
+
+<form action="/students" method="post">
+  <label>
+    First name:
+    <input type="text" name="first_name"/>
+  </label>
+  <p>
+    <label>
+      Surname:
+      <input type="text" name="surname"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      House:
+      <select name="house_id">
+
+       <% for house in @houses %>
+        <option value="<%=house.id%>"><%=house.house_name%></option>
+      <% end %>
+      </select>
+    </label>
+  </p>  
+  <p>
+    <label>
+      Age:
+      <input type="number" name="age"/>
+    </label>
+  </p>
+  <input type="submit" value="Enrol"/>
+</form>

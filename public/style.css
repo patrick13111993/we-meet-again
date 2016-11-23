@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  color:white;
+ font-family: Helvetica;
+    background-image: url("https://i.ytimg.com/vi/FWZsya9giqA/maxresdefault.jpg");
+
+}
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: cyan;
+}
